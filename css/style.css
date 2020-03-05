@@ -1,0 +1,17 @@
+.sidebar1
+{
+  background-color:#ffff;
+  max-height: 30%;
+}
+.sidebar1 a{
+    margin-top: 20px;
+    margin-left: 20px;
+    color:grey;
+    display: block;
+    padding: 1px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.sidebar1 a:hover{
+ color: #4e73df;
+}
