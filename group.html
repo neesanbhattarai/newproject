@@ -397,11 +397,11 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800"><span class="fa fa-ticket"></span> Tickets</h1>
+            <h1 class="h3 mb-0 text-gray-800"><span class="fa fa-ticket"></span> Manage<small> Group</small></h1>
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
               <i class="fas fa-fw fa-pen"></i>
-              Create-Tickets
+              Add Group
             </button>
 
             <!-- Modal -->
@@ -410,7 +410,7 @@
               <div class="modal-dialog modal-dialog-scrollable" role="document">
                 <div class="modal-content">
                   <div class="modal-header" style="background-color:#4e73df;">
-                    <h5 class="modal-title" id="exampleModalScrollableTitle" style="color: #ffffff;" ;> Create Tickets
+                    <h5 class="modal-title" id="exampleModalScrollableTitle" style="color: #ffffff;" ;> Add Group
                     </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
@@ -419,57 +419,22 @@
                   <div class="modal-body">
                     <form>
                       <div class="form-group">
-                        <label for="ticketname">Ticket Name*</label>
-                        <input type="text" class="form-control" id="ticketname" aria-describedby="ticketname"
-                          placeholder="Enter ticketname">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="name"
+                          placeholder="Enter name">
                       </div>
                       <div class="form-group">
-                        <label for="type">Pipeline</label>
-                        <select class="browser-default custom-select">
-                          <option selected>Open this select menu</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
+                        <label for="categoryname">Category Name</label>
+                        <input type="text" class="form-control" id="categoryname" aria-describedby="categoryname"
+                          placeholder="Enter category name">
                       </div>
+            
                       <div class="form-group">
-                        <label for="ticketstatus">Ticket Status*</label>
-                        <input type="text" class="form-control" id="ticketstatus" aria-describedby="ticketstatus"
-                          placeholder="Enter ticket status">
+                        <label for="status">Status</label>
+                        <input type="text" class="form-control" id="status" aria-describedby="status"
+                          placeholder="Enter status">
                       </div>
-                      <div class="form-group">
-                        <label for="source">Source</label>
-                        <input type="text" class="form-control" id="ticketstatus" aria-describedby="ticketstatus"
-                          placeholder="Enter ticket source">
-                      </div>
-                      <div class="form-group">
-                        <label for="ticketowner">Ticket Owner</label>
-                        <input type="text" class="form-control" id="ticketowner" aria-describedby="ticketowner"
-                          placeholder="Enter ticket owner ">
-                      </div>
-                      <div class="form-group">
-                        <label for="priority">Priortiy</label>
-                        <input type="text" class="form-control" id="priority" aria-describedby="priority"
-                          placeholder="Enter priority">
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Description</label>
-                        <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="5"></textarea>
-                      </div>
-                      <hr>
-                      <h3>Associated  ticket with</h3>
-                      <div class="form-group">
-                        <label for="company">Company</label>
-                        <input type="text" class="form-control" id="company" aria-describedby="company"
-                          placeholder="Enter company">
-                      </div>
-                      <div class="form-group">
-                        <label for="contact">Contact</label>
-                        <input type="text" class="form-control" id="contact" aria-describedby="contact"
-                          placeholder="Enter contact">
-                      </div>
-
-
+                      
                       
                     </form>
                   </div>
@@ -483,33 +448,26 @@
           </div>
         </div>
         <div class="row">
-          <div class="card-body col-md-9">
-            
-            
-          </div>
-          <div class="sidebar1 col-md-3">
-            <a href="#">All Tickets</a>
-            <a href="#">My Open Tickets</a>
-            <a href="#">Unassigned Tickets</a>
-            <a href="#">All Saved Filters</a>
-            <hr>
-            <a href="#">Pipeline</a>
-            <small>Support pipelines</small>
-            <hr>
-            <a href="#">+Add Filters</a>
-            <div class="dropdown">
-              <button class="btn btn-primary dropdown-toggle ml-3" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Options
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                
+          <div class="card-body">
+            <div class="table-responsive table-wrapper-scroll-y my-custom-scrollbar">
+                <table class="table table-bordered table-sm" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Group Name</th>
+                      <th>Status</th>
+                      <th>Action</th>
+                      
+                    </tr>
+                  </thead>
+  
+                  </tbody>
+                </table>
               </div>
-            </div>
+            
+            
           </div>
+          
+
         </div>
       </div>
     </div>
