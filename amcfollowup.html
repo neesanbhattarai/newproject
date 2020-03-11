@@ -477,75 +477,88 @@
               </div>
             </div> -->
           </div>
-        
-        <div class="row d-sm-flex align-items-center justify-content-between mb-4">
-            <form>
+
+          <div class="row">
+            <div class="col-md-3">
+              <form>
                 <div class="form-inline">
-                    <label>Type:</label>
-                    <select class="browser-default custom-select">
-                        <option value="1">New AMC</option>
-                        <option value="2">AMC Renewal</option>
-                        
-                      </select>
-                      <div class="radio">
-                        <label><input type="radio" name="optradio" checked>Expired</label>
-                      </div>
-                      <div class="radio">
-                        <label><input type="radio" name="optradio">Expiring</label>
-                      </div>
-                      <div class="radio">
-                        <label><input type="radio" name="optradio" >All</label>
-                      </div>
-                      <label>Status</label>
-                      <select class="browser-default custom-select">
-                          <option value="1">All</option>
-                          <option value="2">New</option>
-                          <option value="3">Reminder Sent</option>
-                          <option value="4">Quotation sent</option>
-                          <option value="5">Pro-Invoice Sent</option>
-                          <option value="6">Invoice Done</option>
-                          <option value="7">No Response</option>
-                          <option value="8">Done</option>
-                          
-                        </select>
-                </div>
-                
-            </form>
-
-         </div>
-         <div class="row">
-            <div class="card-body">
-              <div class="table-responsive table-wrapper-scroll-y my-custom-scrollbar">
-                  <table class="table table-bordered table-sm" id="dataTable" width="100%" cellspacing="0">
-                    <thead>
-                      <tr>
-                        <th>S.N</th>
-                        <th>Name</th>
-                        <th>I.Date</th>
-                        <th>Invoice</th>
-                        <th>Net Amount</th>
-                        <th>Warranty Exp</th>
-                        <th>Remark</th>
-                        <th>Rem.Cnt.</th>
-                        <th>Status</th>
-
-                        
-                      </tr>
-                    </thead>
-    
-                    </tbody>
-                  </table>
-                </div>
-              
-              
+                  <label>Type:</label>
+                  <select class="browser-default custom-select">
+                    <option value="1">New AMC</option>
+                    <option value="2">AMC Renewal</option>
+                  </select>
+              </form>
             </div>
-            
-  
+          </div>
+          <div class="col-md-4 mt-2">
+            <form>
+              <div class="form-inline ">
+                <div class="radio">
+                  <label><input type="radio" name="optradio" checked>Expired</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="optradio">Expiring</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="optradio">All</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-5">
+            <form>
+              <div class="form-inline float-right">
+                <label>Status</label>
+                <select class="browser-default custom-select">
+                  <option value="1">All</option>
+                  <option value="2">New</option>
+                  <option value="3">Reminder Sent</option>
+                  <option value="4">Quotation sent</option>
+                  <option value="5">Pro-Invoice Sent</option>
+                  <option value="6">Invoice Done</option>
+                  <option value="7">No Response</option>
+                  <option value="8">Done</option>
+
+                </select>
+              </div>
+            </form>
           </div>
         </div>
-        </div>
+
       </div>
-    </div> 
+      <div class="row">
+        <div class="card-body">
+          <div class="table-responsive table-wrapper-scroll-y my-custom-scrollbar">
+            <table class="table table-bordered table-sm" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>S.N</th>
+                  <th>Name</th>
+                  <th>I.Date</th>
+                  <th>Invoice</th>
+                  <th>Net Amount</th>
+                  <th>Warranty Exp</th>
+                  <th>Remark</th>
+                  <th>Rem.Cnt.</th>
+                  <th>Status</th>
+
+
+                </tr>
+              </thead>
+
+              </tbody>
+            </table>
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
   </div>
 
   <!-- Bootstrap core JavaScript-->
